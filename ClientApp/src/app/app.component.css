@@ -1,0 +1,65 @@
+.agrupar{
+    width: 860px;
+    background: #d6dfe0;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+.container{
+    width: 860px;
+    background: #d6dfe0;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+.borde{
+    background: #927f7f; 
+    background: -webkit-linear-gradient(to bottom, #798686, #927f7f); 
+    background: linear-gradient(to bottom, #839190, #968181);   margin: auto;
+    padding: 15px;
+    width: 890px; /*ancho de la seccion*/
+    border-radius: 10px 10px 10px 10px; 
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    margin-right: 205px;
+    
+    float: right;
+}
+
+
+
+.Menu{
+    background: #e2e7e9;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+    width: 500px;
+    float: none;
+    font-size: 20px;
+    margin-left: 230px;
+}
+
+.Borde-Menu{
+    background: #796c6c;  
+    background: -webkit-linear-gradient(to bottom, #668686, #7a6c6c);  
+    background: linear-gradient(to bottom, #758b8a, #7e6e6e);
+    padding: 15px;
+    width: 950px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    float: none;
+    margin-left: 100px;
+    
+}
+
+body{
+    background: rgb(228, 218, 224);
+}
+
+.final{
+    background: rgb(37, 36, 37);
+}

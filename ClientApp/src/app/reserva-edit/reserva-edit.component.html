@@ -1,0 +1,50 @@
+<div *ngIf="reserva">
+    <div>
+        <h1 class="h2">Detalle reserva</h1>
+    </div>
+    <p>Editar/Eliminar reservas</p>
+    <div class="form-group">
+        <label>Id:
+            {{reserva.id}}
+        </label>
+    </div>
+    <div class="form-group">
+        <label>ClienteId:
+            {{reserva.clienteId}}
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Estado:
+            {{reserva.estado}}
+        </label>
+    </div>
+    <div class="row">
+    <div class="col-6">
+    <div class="form-group">
+        <label>Cantidad personas:
+            <input [(ngModel)]="reserva.cantidadpersonas" style="width:500px" class="form-control" required placeholder="digite número de personas" type="number"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Fecha:
+            <input [(ngModel)]="reserva.fecha" style="width:500px" class="form-control" required placeholder="digite fecha" type="date"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Hora:
+            <input [(ngModel)]="reserva.hora" style="width:500px" class="form-control" required placeholder="digite la hora" type="time"/>
+        </label>
+    </div>
+    </div><br>
+    </div>
+    <div class="form-group">
+        <button (click)="update()" class="btn btn-primary">Actualizar</button>&nbsp;&nbsp;
+        <button (click)="delete()" class="btn btn-primary">Eliminar</button>
+    </div>
+</div>
+
+

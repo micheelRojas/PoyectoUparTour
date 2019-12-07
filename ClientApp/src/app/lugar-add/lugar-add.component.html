@@ -1,0 +1,33 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+    <div class="col-6">
+    <div class="form-group">
+        <label>Nombre:</label>
+        <input formControlName="nombre" class="form-control"
+        [ngClass]="{'is-invalid': submitted && f.nombre.errors }" placeholder="digite nombre" type="text"/>
+        <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+            <div *ngIf="f.nombre.errors.required">Nombre es requerido</div>
+            
+        </div>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Descripción:</label>
+        <input formControlName="descripcion" style="height:100px" class="form-control"
+        [ngClass]="{'is-invalid': submitted && f.descripcion.errors }" placeholder="digite descripción" type="text"/>
+        <div *ngIf="submitted && f.descripcion.errors" class="invalid-feedback">
+            <div *ngIf="f.descripcion.errors.required">descripcion es requerido</div>
+            
+        </div>
+    </div>
+    </div><br>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-dark">
+            Registrar
+        </button>    
+        <button class="btn btn-secondary" type="reset" (click)="onReset()">Limpiar</button>
+    </div>
+    
+</form>

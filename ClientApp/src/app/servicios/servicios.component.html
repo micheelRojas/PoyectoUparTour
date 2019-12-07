@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+  <title>Lugares</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script language="javascript">
+    step=0;
+    function autoImgFlip() {
+    if (step < 4) {step++;}
+    else {step=0;}
+    if (step==0)
+    {a.src="./assets/Valledupar.jpg";}
+    if (step==1)
+    {a.src="./assets/Pueblo Bello.jpg";}
+    setTimeout("autoImgFlip()", 1000);
+    if (step==2)
+    {a.src="./assets/Chimichagua.jpg";}
+    }
+    
+    </script>
+</head>
+<body>
+    <header><h1>Lugares</h1></header>
+    <div class="row">       
+        <div class="col-md">        
+            <div class="card" onLoad="autoImgFlip();">
+              <img class="card-img-top" src="./assets/Valledupar.jpg">            
+              <div class="card-body">
+                <h4 class="card-title">Valledupar, Cesar</h4>
+                <p class="card-text">Valledupar es una ciudad ubicada en el norte de Colombia, capital del departamento del Cesar.
+                  Es conocida como la capital mundial del vallenato, ya que es considerada cuna de este género musical. 
+                  La ciudad es un importante centro para la producción agrícola, agroindustrial y ganadera en la región
+                  comprendida entre el norte del departamento del Cesar y el sur del departamento de La Guajira.
+                </p>
+               
+                <a routerLink="/clienteadd" class="btn btn-primary">Reservar</a>
+              </div>
+            </div>          
+        </div>
+        <div class="col-md">        
+            <div class="card">
+              <img class="card-img-top" src="./assets/Pueblo Bello.jpg">            
+              <div class="card-body">
+                <h4 class="card-title">Pueblo Bello, Cesar</h4>
+                <p class="card-text">
+                  Pueblo Bello es uno de los municipios que integran el Departamento del Cesar. 
+                  Se encuentra sobre la Sierra Nevada de Santa Marta a una altitud de 1200 m.s.n.m. en un 
+                  estrecho valle de montaña sobre un altiplano. Es un importante centro para servicios de
+                  salud y abasto para la población Indígena de la Sierra y un atractivo sitio turístico por 
+                  tener en su jurisdicción la capital de la Cultura Arhuaca Nabusímake con todas las 
+                  características de la cultura indígena en pleno esplendor
+                </p>
+                
+                <a routerLink="/clienteadd" class="btn btn-primary">Reservar</a>
+              </div>
+            </div>          
+        </div>
+    </div>
+    <div class="row">       
+        <div class="col-md">        
+            <div class="card">
+              <img class="card-img-top" src="./assets/Chimichagua.jpg">            
+              <div class="card-body">
+                <h4 class="card-title">Chimichagua, Cesar</h4>
+                <p class="card-text">
+                  Chimichagua es una población y municipio de Colombia en el departamento de Cesar.
+                  En el municipio de Chimichagua prevalece la economía informal con la pesca artesanal que es 
+                  la actividad económica principal, especialmente en la cabecera municipal y los corregimientos 
+                  de Candelaria, Saloa, Sampegua, La Mata y algunas veredas. La agricultura y la ganadería 
+                  constituyen el segundo factor de ingresos. Sus sitios turísticos más importante son la ciénaga 
+                  de Zapatosa y el muelle flotante.
+                </p>
+                
+                <a routerLink="/clienteadd" class="btn btn-primary">Reservar</a>
+              </div>
+            </div>          
+        </div>
+        <div class="col-md">        
+            <div class="card">
+              <img class="card-img-top" src="./assets/Aguachica.jpg">            
+              <div class="card-body">
+                <h4 class="card-title">Aguachica, Cesar</h4>
+                <p class="card-text">
+                  Aguachica es un municipio colombiano ubicado al nororiente del país, en el departamento del Cesar, siendo 
+                  por economía y población el segundo municipio del departamento y uno de los centros urbanos más importantes de la región.
+                  El municipio se encuentra en una posición geográfica estratégica, siendo un punto de conexión entre el norte y el interior 
+                  oriental del país a través de la Troncal del Magdalena (Ruta Nacional 45) y la Troncal Central (Ruta Nacional 45A), contando 
+                  además con transporte aéreo, férreo y en forma paralela con la vía fluvial del río Magdalena.
+                </p> 
+                
+                <a routerLink="/clienteadd" class="btn btn-primary">Reservar</a>
+              </div>
+            </div>          
+        </div>
+    </div>
+    <div class="row">       
+      <div class="col-md">        
+          <div class="card">
+            <img class="card-img-top" src="./assets/Manaure.jpg">            
+            <div class="card-body">
+              <h4 class="card-title">Manaure, Cesar</h4>
+              <p class="card-text">
+                Manaure Balcón del Cesar es uno de los 25 municipios que conforman el departamento del Cesar, Colombia.
+                Es reconocido en la región por la suavidad de su clima. Posee una precipitación anual de 1361 mm. 
+                El río Manaure, es el principal curso hídrico del Municipio. Nace en el Cerro Pintado en la frontera Colombo-Venezolana 
+                y tras salvaguardar una fuerte pendiente, desemboca en el río Cesar al occidente.Hace parte del Área 
+                metropolitana de Valledupar.
+                El clima de Manaure es de tipo templado cálido. la temperatura media anual ronda los 24 °C con mínimas y máximas de 18 y 30 °C aproximadamente.
+              </p>
+              
+              <a routerLink="/clienteadd" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>          
+      </div>
+      <div class="col-md">        
+          <div class="card">
+            <img class="card-img-top" src="./assets/Chiriguana.jpg">            
+            <div class="card-body">
+              <h4 class="card-title">Chiriguaná, Cesar</h4>
+              <p class="card-text">
+                Chiriguaná es un municipio de Colombia situado en el departamento de Cesar, al noreste del país
+                Chiriguaná posee a su alrededor una serie de ciénagas entre las más importantes se encuentra la ciénaga de Zapatosa, el primer complejo cenagoso del país.
+                Es el tercer municipio del Cesar con la mejor infraestructura. Sus principales lugares turísticos son
+                Villa Loly Centro Ecoturístico (Piscinas, Recreación, Flora y Fauna, Avistamiento de Aves) y
+                Zapatosa Red Turística (Corporación sin animo de lucro en pro del Turismo en la Ciénaga de la Zapatosa).
+
+              </p>
+              
+              <a routerLink="/clienteadd" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>          
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="iniciar">
+                <h1 class="h2">¿Ya tiene una cuenta?</h1>
+                <div class="row">
+                <div class="col-6">
+                <div class="form-group">
+                    <label>Correo:</label>
+                    <input formControlName="correo" class="form-control"
+                    [ngClass]="{'is-invalid': submitted && f.correo.errors }" placeholder="digite correo" type="email"/>
+                    <div *ngIf="submitted && f.correo.errors" class="invalid-feedback">
+                        <div *ngIf="f.correo.errors.required">correo es requerido</div>
+                        <div *ngIf="f.correo.errors.maxlength">correo solo puede tener hasta 25 caracteres</div>
+                    </div>
+                </div>
+                </div><br>
+                <div class="col-6">
+                <div class="form-group">
+                    <label>Contraseña:</label>
+                    <input formControlName="contrasena" class="form-control"
+                    [ngClass]="{'is-invalid': submitted && f.contrasena.errors }" placeholder="digite contraseña" type="password"/>
+                    <div *ngIf="submitted && f.contrasena.errors" class="invalid-feedback">
+                        <div *ngIf="f.contrasena.errors.required">La contraseña es requerida</div>
+                        <div *ngIf="f.contrasena.errors.maxlength">La contraseña solo puede tener hasta 20 caracteres</div>
+                    </div>
+                </div>
+                </div><br>
+                <div class="form-group">
+                    <a routerLink="/reservaadd" class="btn btn-priority">Siguiente</a>
+                </div>    
+                </div>
+    </div> 
+    
+    <div class="row">
+    <div class="col-6">
+    <div class="form-group">
+        <label>Identificación:</label>
+        <input formControlName="identificacion" class="form-control"
+        [ngClass]="{'is-invalid': submitted && f.identificacion.errors }" placeholder="digite identificacion" type="text"/>
+        <div *ngIf="submitted && f.identificacion.errors" class="invalid-feedback">
+            <div *ngIf="f.identificacion.errors.required">La identificacion es requerida</div>
+            <div *ngIf="f.identificacion.errors.maxlength">La identificacion solo puede tener hasta 14 caracteres</div>
+        </div>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Nombre:</label>
+        <input formControlName="nombre" class="form-control"
+        [ngClass]="{'is-invalid': submitted && f.nombre.errors }" placeholder="digite nombre" type="text"/>
+        <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+            <div *ngIf="f.nombre.errors.required">Nombre es requerido</div>
+            <div *ngIf="f.nombre.errors.maxlength">nombre solo puede tener hasta 30 caracteres</div>
+        </div>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Apellidos:</label>
+        <input formControlName="apellidos" class="form-control"
+        [ngClass]="{'is-invalid': submitted && f.apellidos.errors }" placeholder="digite apellidos" type="text"/>
+        <div *ngIf="submitted && f.apellidos.errors" class="invalid-feedback">
+            <div *ngIf="f.apellidos.errors.required">apellidos es requerido</div>
+            <div *ngIf="f.apellidos.errors.maxlength">apellidos solo puede tener hasta 40 caracteres</div>
+        </div>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Correo:</label>
+        <input formControlName="correo" class="form-control"
+        [ngClass]="{'is-invalid': submitted && f.correo.errors }" placeholder="digite correo" type="email"/>
+        <div *ngIf="submitted && f.correo.errors" class="invalid-feedback">
+            <div *ngIf="f.correo.errors.required">correo es requerido</div>
+            <div *ngIf="f.correo.errors.maxlength">correo solo puede tener hasta 25 caracteres</div>
+        </div>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Contraseña:</label>
+        <input formControlName="contrasena" class="form-control"
+        [ngClass]="{'is-invalid': submitted && f.contrasena.errors }" placeholder="digite contraseña" type="password"/>
+        <div *ngIf="submitted && f.contrasena.errors" class="invalid-feedback">
+            <div *ngIf="f.contrasena.errors.required">La contraseña es requerida</div>
+            <div *ngIf="f.contrasena.errors.maxlength">La contraseña solo puede tener hasta 20 caracteres</div>
+        </div>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Dirección:</label>
+        <input formControlName="direccion" class="form-control"
+        [ngClass]="{'is-invalid': submitted && f.direccion.errors }" placeholder="digite direccion" type="text"/>
+        <div *ngIf="submitted && f.direccion.errors" class="invalid-feedback">
+            <div *ngIf="f.direccion.errors.required">La direccion es requerida</div>
+            <div *ngIf="f.direccion.errors.maxlength">La direccion solo puede tener hasta 30 caracteres</div>
+        </div>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Teléfono:</label>
+        <input formControlName="telefono" class="form-control"
+        [ngClass]="{'is-invalid': submitted && f.telefono.errors }" placeholder="digite telefono" type="number"/>
+        <div *ngIf="submitted && f.telefono.errors" class="invalid-feedback">
+            <div *ngIf="f.telefono.errors.required">telefono es requerido</div>
+            <div *ngIf="f.telefono.errors.maxlength">telefono solo puede tener hasta 14 caracteres</div>
+        </div>
+    </div>
+    </div><br>
+    </div>
+    <div class="form-group">
+        <button  (click)="add()" class="btn btn-dark">
+            Registrar
+        </button>    
+        <button class="btn btn-secondary" type="reset" (click)="onReset()">Limpiar</button>
+    </div>
+    <br>
+    <div class="form-group">
+        <button id="Siguiente" routerLink="/reservaadd/{{cliente.identificacion}}" class="btn btn-dark" disabled=true>
+            Siguiente
+        </button>        
+    </div>
+</form>

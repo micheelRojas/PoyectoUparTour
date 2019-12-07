@@ -1,0 +1,78 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+<div class="row">
+<div class="col-6">
+<div class="form-group">
+    <label>Placa:</label>
+    <input formControlName="placa" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.placa.errors }" placeholder="digite placa" type="text"/>
+    <div *ngIf="submitted && f.placa.errors" class="invalid-feedback">
+        <div *ngIf="f.placa.errors.required">La placa es requerida</div>
+        <div *ngIf="f.placa.errors.maxlength">La placa solo puede tener hasta 14 caracteres</div>
+    </div>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+    <label>Modelo:</label>
+    <input formControlName="modelo" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.modelo.errors }" placeholder="digite modelo" type="text"/>
+    <div *ngIf="submitted && f.modelo.errors" class="invalid-feedback">
+        <div *ngIf="f.modelo.errors.required">Modelo es requerido</div>
+        <div *ngIf="f.modelo.errors.maxlength">modelo solo puede tener hasta 30 caracteres</div>
+    </div>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+    <label>Marca:</label>
+    <input formControlName="marca" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.marca.errors }" placeholder="digite marca" type="text"/>
+    <div *ngIf="submitted && f.marca.errors" class="invalid-feedback">
+        <div *ngIf="f.marca.errors.required">marca es requerida</div>
+        <div *ngIf="f.marca.errors.maxlength(20)">marca solo puede tener hasta 20 caracteres</div>
+    </div>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+    <label>Soat:</label>
+    <input formControlName="soat" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.soat.errors }" placeholder="digite soat" type="text"/>
+    <div *ngIf="submitted && f.soat.errors" class="invalid-feedback">
+        <div *ngIf="f.soat.errors.required">soat es requerido</div>
+        <div *ngIf="f.soat.errors.maxlength(20)">correo solo puede tener hasta 20 caracteres</div>
+    </div>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+    <label>Tecnomecanica:</label>
+    <input formControlName="tecnomecanica" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.tecnomecanica.errors }" placeholder="digite tecnomecanica" type="text"/>
+    <div *ngIf="submitted && f.tecnomecanica.errors" class="invalid-feedback">
+        <div *ngIf="f.tecnomecanica.errors.required">La tecnomecanica es requerida</div>
+        <div *ngIf="f.tecnomecanica.errors.maxlength(30)">La tecnomecanica solo puede tener hasta 30 caracteres</div>
+    </div>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+    <label>Capacidad:</label>
+    <input formControlName="capacidad" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.capacidad.errors }" placeholder="digite capacidad" type="number"/>
+    <div *ngIf="submitted && f.capacidad.errors" class="invalid-feedback">
+        <div *ngIf="f.capacidad.errors.required">La capacidad es requerida</div>
+    </div>
+</div>
+</div><br>
+</div>
+<div class="form-group">
+    <button  class="btn btn-dark">
+        Registrar
+    </button>    
+    <button class="btn btn-secondary" type="reset" (click)="onReset()">Limpiar</button>
+</div>
+</form>
+        
+ 
+

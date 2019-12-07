@@ -1,0 +1,40 @@
+<header class="Titulo">
+    <h1>Hoteles</h1>
+</header>
+<body>
+        <div>
+              <!--- <h1 class="h2">List</h1>-->
+                </div>
+                <div>
+                    <table class='table table-striped'>
+                        <thead>
+                            <tr>
+                                <tr>
+                                    <!--<th>Id</th>-->
+                                    <th>Id</th>
+                                    <th>Nombre</th>
+                                    <th>Dirección</th>
+                                    <th>Teléfono</th>
+                                    <th>Precio</th>
+                                    <th>Descuento</th>
+                                    
+                                    <th>Ver</th>
+                                </tr>
+                            
+                        </thead>
+                        <tr *ngFor="let hotel of hoteles">
+                           <!--<td>{{cliente.id}}</td>-->
+                           <td>{{hotel.id}}</td>
+                           <td>{{hotel.nombre}}</td>
+                           <td>{{hotel.direccion}}</td>
+                           <td>{{hotel.telefono}}</td>
+                           <td>{{hotel.precio}}</td>
+                           <td>{{hotel.descuento}}</td>
+                           
+                           <td><a routerLink="/hoteledit/{{hotel.id}}">
+                            ver
+                           </a></td>
+                        </tr>
+                    </table>
+                </div>
+</body>

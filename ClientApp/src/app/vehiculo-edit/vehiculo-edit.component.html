@@ -1,0 +1,54 @@
+<div *ngIf="vehiculo">
+    <div>
+        <h1 class="h2">Detalle vehiculo</h1>
+    </div>
+    <p>Editar/Eliminar vehiculos</p>
+    <div class="form-group">
+        <label>Placa:
+            {{vehiculo.placa}}
+        </label>
+    </div>
+    <div class="row">
+    <div class="col-6">
+    <div class="form-group">
+        <label>Modelo:
+            <input [(ngModel)]="vehiculo.modelo" style="width:500px" class="form-control" required placeholder="digite modelo" type="text"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Marca:
+            <input [(ngModel)]="vehiculo.marca" style="width:500px" class="form-control" required placeholder="digite marca" type="text"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Soat:
+            <input [(ngModel)]="vehiculo.soat" style="width:500px" class="form-control" required placeholder="digite soat" type="text"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Tecnomecánica:
+            <input [(ngModel)]="vehiculo.tecnomecanica" style="width:500px" class="form-control" required placeholder="digite tecnomecánica" type="text"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Capacidad:
+            <input [(ngModel)]="vehiculo.capacidad" style="width:500px" class="form-control" required placeholder="digite la capacidad" type="number"/>
+        </label>
+    </div>
+    </div><br>
+    </div>
+    <div class="form-group">
+        <button (click)="update()" class="btn btn-primary">Actualizar</button>&nbsp;&nbsp;
+        <button (click)="delete()" class="btn btn-primary">Eliminar</button>
+    </div>
+</div>
+
+

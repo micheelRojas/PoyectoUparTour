@@ -1,0 +1,52 @@
+<div *ngIf="conductor">
+    <div>
+        <h1 class="h2">Detalle conductor</h1>
+    </div>
+    <p>Editar/Eliminar conductores</p>
+    <div class="form-group">
+        <label>Identificación:
+            {{conductor.identificacion}}
+        </label>
+    </div>
+    <div class="row">
+    <div class="col-6">
+    <div class="form-group">
+        <label>Nombre:
+            <input [(ngModel)]="conductor.nombre" style="width:500px" class="form-control" required placeholder="digite nombre" type="text"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Apellidos:
+            <input [(ngModel)]="conductor.apellidos" style="width:500px" class="form-control" required placeholder="digite apellidos" type="text"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Correo:
+            <input [(ngModel)]="conductor.correo" style="width:500px" class="form-control" required placeholder="digite correo" type="text"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Teléfono:
+            <input [(ngModel)]="conductor.telefono" style="width:500px" class="form-control" required placeholder="digite teléfono" type="number"/>
+        </label>
+    </div>
+    </div><br>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Licencia:
+            <input [(ngModel)]="conductor.licencia" style="width:500px" class="form-control" required placeholder="digite licencia" type="text"/>
+        </label>
+    </div>
+    </div><br>
+    </div>
+    <div class="form-group">
+        <button (click)="update()" class="btn btn-primary">Actualizar</button>&nbsp;&nbsp;
+        <button (click)="delete()" class="btn btn-primary">Eliminar</button>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div *ngIf="hotel">
+        <div>
+            <h1 class="h2">Detalle hotel</h1>
+        </div>
+        <p>Editar/Eliminar hoteles</p>
+        <div class="form-group">
+            <label>Id:
+                {{hotel.id}}
+            </label>
+        </div>
+        <div class="row">
+        <div class="col-6">
+        <div class="form-group">
+            <label>Nombre:
+                <input [(ngModel)]="hotel.nombre" style="width:500px" class="form-control" required placeholder="digite nombre" type="text"/>
+            </label>
+        </div>
+        </div><br>
+        <div class="col-6">
+        <div class="form-group">
+            <label>Dirección:
+                <input [(ngModel)]="hotel.direccion" style="width:500px" class="form-control" required placeholder="digite dirección" type="text"/>
+            </label>
+        </div>
+        </div><br>
+        <div class="col-6">
+        <div class="form-group">
+            <label>Teléfono:
+                <input [(ngModel)]="hotel.telefono" style="width:500px" class="form-control" required placeholder="digite teléfono" type="number"/>
+            </label>
+        </div>
+        </div><br>
+        <div class="col-6">
+        <div class="form-group">
+            <label>Precio:
+                <input [(ngModel)]="hotel.precio" style="width:500px" class="form-control" required placeholder="digite precio" type="number"/>
+            </label>
+        </div>
+        </div><br>
+        <div class="col-6">
+        <div class="form-group">
+            <label>Descuento:
+                <input [(ngModel)]="hotel.descuento" style="width:500px" class="form-control"required placeholder="digite descuento" type="number"/>
+            </label>
+        </div>
+        </div><br>
+        </div>
+        <div class="form-group">
+            <button (click)="update()" class="btn btn-primary">Actualizar</button>&nbsp;&nbsp;
+            <button (click)="delete()" class="btn btn-primary">Eliminar</button>
+        </div>
+    </div>
+    
+    

@@ -1,0 +1,65 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+<div class="row">
+<div class="col-6">
+<div class="form-group">
+    <label>Nombre:</label>
+    <input formControlName="nombre" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.nombre.errors }" placeholder="digite nombre" type="text"/>
+    <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+        <div *ngIf="f.nombre.errors.required">Nombre es requerido</div>
+        <div *ngIf="f.nombre.errors.maxlength(30)">nombre solo puede tener hasta 30 caracteres</div>
+    </div>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+    <label>Dirección:</label>
+    <input formControlName="direccion" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.direccion.errors }" placeholder="digite dirección" type="text"/>
+    <div *ngIf="submitted && f.direccion.errors" class="invalid-feedback">
+        <div *ngIf="f.direccion.errors.required">dirección es requerido</div>
+        <div *ngIf="f.direccion.errors.maxlength(30)">dirección solo puede tener hasta 30 caracteres</div>
+    </div>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+    <label>Teléfono:</label>
+    <input formControlName="telefono" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.telefono.errors }" placeholder="digite teléfono" type="number"/>
+    <div *ngIf="submitted && f.telefono.errors" class="invalid-feedback">
+        <div *ngIf="f.telefono.errors.required">teléfono es requerido</div>
+        <div *ngIf="f.telefono.errors.maxlength(14)">teléfono solo puede tener hasta 14 caracteres</div>
+    </div>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+    <label>Precio:</label>
+    <input formControlName="precio" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.precio.errors }" placeholder="digite precio" type="number"/>
+    <div *ngIf="submitted && f.precio.errors" class="invalid-feedback">
+        <div *ngIf="f.precio.errors.required">precio es requerida</div>
+        
+    </div>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+    <label>Descuento:</label>
+    <input formControlName="descuento" class="form-control"
+    [ngClass]="{'is-invalid': submitted && f.descuento.errors }" placeholder="digite descuento" type="number"/>
+    <div *ngIf="submitted && f.descuento.errors" class="invalid-feedback">
+        <div *ngIf="f.descuento.errors.required">descuento es requerida</div>
+        
+    </div>
+</div>
+</div><br>
+</div>
+<div class="form-group">
+    <button class="btn btn-dark">
+        Registrar
+    </button>    
+    <button class="btn btn-secondary" type="reset" (click)="onReset()">Limpiar</button>
+</div>
+</form>

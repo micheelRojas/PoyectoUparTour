@@ -1,0 +1,39 @@
+<header class="Titulo">
+    <h1>Conductores</h1>
+</header>
+<body>
+        <div>
+              <!--- <h1 class="h2">List</h1>-->
+                </div>
+                <div>
+                    <table border="1" class='table table-striped'>
+                        <thead>
+                            <tr>
+                                <tr>
+                                    <!--<th>Id</th>-->
+                                    <th>Identificación</th>
+                                    <th>Nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>Correo</th>
+                                    
+                                    <th>Teléfono</th>
+                                    <th>Licencia</th>
+                                    <th>Ver</th>
+                                </tr>
+                            
+                        </thead>
+                        <tr *ngFor="let conductor of conductores">
+                           <!--<td>{{cliente.id}}</td>-->
+                           <td>{{conductor.identificacion}}</td>
+                           <td>{{conductor.nombre}}</td>
+                           <td>{{conductor.apellidos}}</td>
+                           <td>{{conductor.correo}}</td>
+                           <td>{{conductor.telefono}}</td>
+                           <td>{{conductor.licencia}}</td>
+                           <td><a routerLink="/conductoredit/{{conductor.identificacion}}">
+                            ver
+                           </a></td>
+                        </tr>
+                    </table>
+                </div>
+</body>

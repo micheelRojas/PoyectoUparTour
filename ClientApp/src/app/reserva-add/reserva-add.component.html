@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Reserva Add</h1>
+</div>
+<p>Aplicación para agregar reservas</p>
+
+<div *ngIf="cliente">
+    <div class="form-group">
+        <label>Cedula:
+            {{cliente.identificacion}}
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Nombre:
+            {{cliente.nombre}}
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Apellido:
+            {{cliente.apellidos}}
+        </label>
+    </div>
+
+</div>
+        
+<div class="row">
+<div class="col-6">
+<div class="form-group">
+            <label>Cantidad personas:
+                <input [(ngModel)]="reserva.cantidadpersonas" class="form-control" required placeholder="digite el número de personas" type="number"/>
+            </label>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+            <label>Fecha:
+                <input [(ngModel)]="reserva.fecha" class="form-control" required placeholder="digite la fecha" type="date"/>
+            </label>
+</div>
+</div><br>
+<div class="col-6">
+<div class="form-group">
+            <label>Hora:
+                <input [(ngModel)]="reserva.hora" class="form-control" required placeholder="digite la hora" type="time"/>
+            </label>
+</div>
+</div><br>
+</div>
+<div class="form-group">
+    <button (click)="add()" class="btn btn-priority">Registrar</button>
+</div>

@@ -1,0 +1,37 @@
+<header class="Titulo">
+    <h1>Vehiculos</h1>
+</header>
+<body>
+        <div>
+                </div>
+                <div>
+                    <table class='table table-striped'>
+                        <thead>
+                            <tr>
+                                <tr>
+                                    <th>Placa</th>
+                                    <th>Modelo</th>
+                                    <th>Marca</th>
+                                    <th>Soat</th>
+                                    <th>Tecnomecánica</th>
+                                    <th>Capacidad</th>
+                                    <th>Ver</th>
+                                </tr>
+                             
+                        </thead>
+                        <tr *ngFor="let vehiculo of vehiculos">
+                           <td>{{vehiculo.placa}}</td>
+                           <td>{{vehiculo.modelo}}</td>
+                           <td>{{vehiculo.marca}}</td>
+                           <td>{{vehiculo.soat}}</td> 
+                           <td>{{vehiculo.tecnomecanica}}</td>    
+                           <td>{{vehiculo.capacidad}}</td>         
+                           <td><a routerLink="/vehiculoedit/{{vehiculo.placa}}">
+                            ver
+                           </a></td>
+                        </tr>
+                    </table>
+                </div>
+</body>
+
+

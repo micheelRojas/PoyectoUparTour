@@ -1,0 +1,31 @@
+<div *ngIf="lugar">
+        <div>
+            <h1 class="h2">Detalle lugar</h1>
+        </div>
+        <p>Editar/Eliminar lugares</p>
+        <div class="form-group">
+            <label>Id:
+                {{lugar.id}}
+            </label>
+        </div>
+        <div class="row">
+        <div class="col-6">
+        <div class="form-group">
+            <label>Nombre:
+                <input [(ngModel)]="lugar.nombre" style="width:500px" class="form-control" required placeholder="digite nombre" type="text"/>
+            </label>
+        </div>
+        </div><br>
+        <div class="col-6">
+        <div class="form-group">
+            <label>Descripción:
+                <input [(ngModel)]="lugar.descripcion" style="width:500px" class="form-control" required placeholder="digite descripcion" type="text"/>
+            </label>
+        </div>
+        </div><br>
+        </div>
+        <div class="form-group">
+            <button (click)="update()" class="btn btn-primary">Actualizar</button>&nbsp;&nbsp;
+            <button (click)="delete()" class="btn btn-primary">Eliminar</button>
+        </div>
+    </div>
