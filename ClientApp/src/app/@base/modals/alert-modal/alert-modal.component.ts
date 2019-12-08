@@ -9,7 +9,7 @@ export class AlertModalComponent  {
 
  
   @Input() title;
-    @Input() message;
+  @Input() message;
     constructor(public activeModal: NgbActiveModal) { }
 
 }

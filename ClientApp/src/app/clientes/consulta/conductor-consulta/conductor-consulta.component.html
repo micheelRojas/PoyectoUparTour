@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-6">
+      <input [(ngModel)]="searchText" type="text" class="form-control" placeholder="Type to filter">
+    </div>
+  </div>
+  <hr>
+  
+  <table class="table table-striped" *ngIf='conductores && conductores.length'>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Cedula</th>
+        <th scope="col">Nombre </th>
+        <th scope="col">Apellidos </th>
+        <th scope="col">Email</th>
+        <th scope="col">Teléfono</th>
+        <th scope="col">Licencia </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let conductor of conductores | filtroConductor:searchText; index as i" (click)="seleccionar(conductor)">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{conductor.identificacion}}</td>
+          <td>{{conductor.nombre}}</td>
+           <td>{{conductor.apellidos}}</td>
+             <td>{{conductor.correo}}</td>
+            <td>{{conductor.telefono}}</td>
+          <td>{{conductor.licencia}}</td>
+      </tr>
+    </tbody>
+  </table>

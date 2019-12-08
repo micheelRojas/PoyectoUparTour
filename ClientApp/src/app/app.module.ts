@@ -43,6 +43,24 @@ import { AlertModalComponent } from './@base/modals/alert-modal/alert-modal.comp
 import { ClienteConsultaComponent } from './clientes/consulta/cliente-consulta/cliente-consulta.component';
 import { ClienteConsultaModalComponent } from './clientes/consulta/cliente-consulta-modal/cliente-consulta-modal.component';
 import { ModalComponent } from './clientes/consulta/modal/modal.component';
+import { FiltroHotelPipe } from './pipes/filtro-hotel.pipe';
+import { HotelConsultaComponent } from './clientes/consulta/hotel-consulta/hotel-consulta.component';
+import { FiltroRestaurantePipe } from './pipes/filtro-restaurante.pipe';
+import { FiltroGuiaPipe } from './pipes/filtro-guia.pipe';
+import { FiltroConductorPipe } from './pipes/filtro-conductor.pipe';
+import { FiltroVehiculoPipe } from './pipes/filtro-vehiculo.pipe';
+import { FiltroTransportePipe } from './pipes/filtro-transporte.pipe';
+import { FiltroTourPipe } from './pipes/filtro-tour.pipe';
+import { FiltroReservaPipe } from './pipes/filtro-reserva.pipe';
+import { FiltroLugarPipe } from './pipes/filtro-lugar.pipe';
+import { RestauranteConsultaComponent } from './clientes/consulta/restaurante-consulta/restaurante-consulta.component';
+import { GuiaConsultaComponent } from './clientes/consulta/guia-consulta/guia-consulta.component';
+import { ConductorConsultaComponent } from './clientes/consulta/conductor-consulta/conductor-consulta.component';
+import { VehiculoConsultaComponent } from './clientes/consulta/vehiculo-consulta/vehiculo-consulta.component';
+import { TransporteConsultaComponent } from './clientes/consulta/transporte-consulta/transporte-consulta.component';
+import { TourConsultaComponent } from './clientes/consulta/tour-consulta/tour-consulta.component';
+import { ReservaConsultaComponent } from './clientes/consulta/reserva-consulta/reserva-consulta.component';
+import { LugarConsultaComponent } from './clientes/consulta/lugar-consulta/lugar-consulta.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +98,25 @@ import { ModalComponent } from './clientes/consulta/modal/modal.component';
     AlertModalComponent,
     ClienteConsultaComponent,
     ClienteConsultaModalComponent,
-    ModalComponent
+    ModalComponent,
+    FiltroHotelPipe,
+    HotelConsultaComponent,
+    FiltroRestaurantePipe,
+    FiltroGuiaPipe,
+    FiltroConductorPipe,
+    FiltroVehiculoPipe,
+    FiltroTransportePipe,
+    FiltroTourPipe,
+    FiltroReservaPipe,
+    FiltroLugarPipe,
+    RestauranteConsultaComponent,
+    GuiaConsultaComponent,
+    ConductorConsultaComponent,
+    VehiculoConsultaComponent,
+    TransporteConsultaComponent,
+    TourConsultaComponent,
+    ReservaConsultaComponent,
+    LugarConsultaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -98,7 +134,8 @@ import { ModalComponent } from './clientes/consulta/modal/modal.component';
     ]),
     AppRoutingModule
   ],
-  entryComponents:[ClienteConsultaComponent],
+  //entryComponents:[ClienteConsultaComponent],
+  entryComponents:[AlertModalComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

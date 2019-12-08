@@ -26,7 +26,35 @@
     <div class="row">       
         <div class="col-md">        
             <div class="card" onLoad="autoImgFlip();">
-              <img class="card-img-top" src="./assets/Valledupar.jpg">            
+              <!---->
+              <ngb-carousel *ngIf="images">
+                  <ng-template ngbSlide >
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[0]"width="450" height="300" alt="Random first slide">
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[1]"width="450" height="300" alt="Random second slide">
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                          <div class="picsum-img-wrapper">
+                                  <img [src]="images[2]"width="450" height="300" alt="Random third slide">
+                                </div>
+                                <div class="carousel-caption">
+                                  
+                                </div>
+                              </ng-template>
+                            </ngb-carousel>
+              <!---->
+              <!--<img class="card-img-top" src="./assets/Valledupar.jpg">  -->          
               <div class="card-body">
                 <h4 class="card-title">Valledupar, Cesar</h4>
                 <p class="card-text">Valledupar es una ciudad ubicada en el norte de Colombia, capital del departamento del Cesar.
@@ -41,7 +69,35 @@
         </div>
         <div class="col-md">        
             <div class="card">
-              <img class="card-img-top" src="./assets/Pueblo Bello.jpg">            
+              <!---->
+              <ngb-carousel *ngIf="images">
+                  <ng-template ngbSlide >
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[0]"width="450" height="300" alt="Random first slide">
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[1]"width="450" height="300" alt="Random second slide">
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                          <div class="picsum-img-wrapper">
+                                  <img [src]="images[2]"width="450" height="300" alt="Random third slide">
+                                </div>
+                                <div class="carousel-caption">
+                                  
+                                </div>
+                              </ng-template>
+                            </ngb-carousel>
+              <!---->
+              <!--<img class="card-img-top" src="./assets/Pueblo Bello.jpg"> -->           
               <div class="card-body">
                 <h4 class="card-title">Pueblo Bello, Cesar</h4>
                 <p class="card-text">
@@ -61,7 +117,35 @@
     <div class="row">       
         <div class="col-md">        
             <div class="card">
-              <img class="card-img-top" src="./assets/Chimichagua.jpg">            
+              <!---->
+              <ngb-carousel *ngIf="images">
+                  <ng-template ngbSlide >
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[0]"width="450" height="300" alt="Random first slide">
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[1]"width="450" height="300" alt="Random second slide">
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                          <div class="picsum-img-wrapper">
+                                  <img [src]="images[2]"width="450" height="300" alt="Random third slide">
+                                </div>
+                                <div class="carousel-caption">
+                                  
+                                </div>
+                              </ng-template>
+                            </ngb-carousel>
+              <!---->
+              <!--<img class="card-img-top" src="./assets/Chimichagua.jpg"> -->           
               <div class="card-body">
                 <h4 class="card-title">Chimichagua, Cesar</h4>
                 <p class="card-text">
@@ -79,7 +163,35 @@
         </div>
         <div class="col-md">        
             <div class="card">
-              <img class="card-img-top" src="./assets/Aguachica.jpg">            
+              <!---->
+              <ngb-carousel *ngIf="images">
+                  <ng-template ngbSlide >
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[0]"width="450" height="300" alt="Random first slide">
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[1]"width="450" height="300" alt="Random second slide">
+                    </div>
+                    <div class="carousel-caption">
+                      
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                          <div class="picsum-img-wrapper">
+                                  <img [src]="images[2]"width="450" height="300" alt="Random third slide">
+                                </div>
+                                <div class="carousel-caption">
+                                  
+                                </div>
+                              </ng-template>
+                            </ngb-carousel>
+              <!---->
+              <!--<img class="card-img-top" src="./assets/Aguachica.jpg">  -->          
               <div class="card-body">
                 <h4 class="card-title">Aguachica, Cesar</h4>
                 <p class="card-text">
@@ -98,7 +210,35 @@
     <div class="row">       
       <div class="col-md">        
           <div class="card">
-            <img class="card-img-top" src="./assets/Manaure.jpg">            
+            <!---->
+            <ngb-carousel *ngIf="images">
+                <ng-template ngbSlide >
+                  <div class="picsum-img-wrapper">
+                    <img [src]="images[0]"width="450" height="300" alt="Random first slide">
+                  </div>
+                  <div class="carousel-caption">
+                    
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img [src]="images[1]"width="450" height="300" alt="Random second slide">
+                  </div>
+                  <div class="carousel-caption">
+                    
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                                <img [src]="images[2]"width="450" height="300" alt="Random third slide">
+                              </div>
+                              <div class="carousel-caption">
+                                
+                              </div>
+                            </ng-template>
+                          </ngb-carousel>
+            <!---->
+            <!--<img class="card-img-top" src="./assets/Manaure.jpg">            -->
             <div class="card-body">
               <h4 class="card-title">Manaure, Cesar</h4>
               <p class="card-text">
@@ -116,7 +256,35 @@
       </div>
       <div class="col-md">        
           <div class="card">
-            <img class="card-img-top" src="./assets/Chiriguana.jpg">            
+            <!---->
+            <ngb-carousel *ngIf="images">
+                <ng-template ngbSlide >
+                  <div class="picsum-img-wrapper">
+                    <img [src]="images[0]"width="450" height="300" alt="Random first slide">
+                  </div>
+                  <div class="carousel-caption">
+                    
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img [src]="images[1]"width="450" height="300" alt="Random second slide">
+                  </div>
+                  <div class="carousel-caption">
+                    
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                                <img [src]="images[2]"width="450" height="300" alt="Random third slide">
+                              </div>
+                              <div class="carousel-caption">
+                                
+                              </div>
+                            </ng-template>
+                          </ngb-carousel>
+            <!---->
+           <!--- <img class="card-img-top" src="./assets/Chiriguana.jpg">  -->          
             <div class="card-body">
               <h4 class="card-title">Chiriguaná, Cesar</h4>
               <p class="card-text">

@@ -29,11 +29,17 @@ export class HandleErrorService {
   }
 
   public log(message: string) {
-      console.log(message);
+     // console.log(message);
+      const modalRef = this.modalService.open(AlertModalComponent);
+      modalRef.componentInstance.title = 'Mensaje';
+      modalRef.componentInstance.message = message;
   }
 
   private mostrarError500(error: any): void {
-      console.error(error);
+      //console.error(error);
+      const modalRef = this.modalService.open(AlertModalComponent);
+      modalRef.componentInstance.title = 'Mensaje de Error';
+      modalRef.componentInstance.message = error;
   }
 
   private mostrarError400(error: any): void {

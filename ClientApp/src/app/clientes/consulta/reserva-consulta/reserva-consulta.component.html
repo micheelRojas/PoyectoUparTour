@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-6">
+      <input [(ngModel)]="searchText" type="text" class="form-control" placeholder="Type to filter">
+    </div>
+  </div>
+  <hr>
+  
+  <table class="table table-striped" *ngIf='reservas && reservas.length'>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">identificación</th>
+        <th scope="col">Cliente</th>
+        <th scope="col">Estado </th>
+        <th scope="col">Cantidad Personas</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Hora</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let reserva of reservas | filtroReserva:searchText; index as i" (click)="seleccionar(reserva)">
+        <th scope="row">{{ i + 1 }}</th>
+         <td>{{reserva.id}}</td>
+        <td>{{reserva.clienteId}}</td>
+        <td><span *ngIf="reserva.estado===true;"><b>Concretada</b></span><span *ngIf="reserva.estado===false;"><b>Pendiente</b></span></td>
+        <td>{{reserva.cantidadPersonas}}</td>
+        <td>{{reserva.fecha}}</td> 
+        <td>{{reserva.hora}}</td>  
+      </tr>
+    </tbody>
+  </table>
