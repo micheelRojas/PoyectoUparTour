@@ -21,7 +21,7 @@ html {
   background: #28276d;
 }
 .agrupar{
-  background: rgba(205, 205, 214, 0.1);
+  background: rgba(151, 157, 243, 0.1);
   width: 1085px;
   
   padding: 15px;
@@ -47,7 +47,7 @@ html {
 
 
 .Menu{
-  background: rgba(73, 247, 4, 0.2);
+  background: rgba(205, 205, 214, 0.1);
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
@@ -64,8 +64,8 @@ html {
 }
 
 .Borde-Menu{
-  background: rgba(205, 205, 214, 0.1);
   
+  background: rgba(73, 247, 4, 0.2);
   background: -webkit-linear-gradient(to bottom, #668686, #7a6c6c,0.1);  
   background: linear-gradient(to bottom, #758b8a, #7e6e6e,0.1);;
   padding: 15px;
