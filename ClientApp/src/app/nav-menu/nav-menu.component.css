@@ -21,8 +21,9 @@ html {
   background: #28276d;
 }
 .agrupar{
+  background: rgba(205, 205, 214, 0.1);
   width: 1085px;
-  background: #d6dfe0;
+  
   padding: 15px;
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
@@ -31,9 +32,9 @@ html {
 
 .borde{
   
-  background: #927f7f; 
-  background: -webkit-linear-gradient(to bottom, #798686, #927f7f); 
-  background: linear-gradient(to bottom, #839190, #968181); 
+  background: rgba(73, 247, 4, 0.2);
+  background: -webkit-linear-gradient(to bottom, #668686, #7a6c6c,0.1);  
+  background: linear-gradient(to bottom, #758b8a, #7e6e6e,0.1);
   padding: 15px;
   width: 1117px;
   border-radius: 5px 5px 5px 5px;
@@ -46,7 +47,7 @@ html {
 
 
 .Menu{
-  background: #e2e7e9;
+  background: rgba(73, 247, 4, 0.2);
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
@@ -63,9 +64,10 @@ html {
 }
 
 .Borde-Menu{
-  background: #796c6c;  
-  background: -webkit-linear-gradient(to bottom, #668686, #7a6c6c);  
-  background: linear-gradient(to bottom, #758b8a, #7e6e6e);
+  background: rgba(205, 205, 214, 0.1);
+  
+  background: -webkit-linear-gradient(to bottom, #668686, #7a6c6c,0.1);  
+  background: linear-gradient(to bottom, #758b8a, #7e6e6e,0.1);;
   padding: 15px;
   width: 1008px;
   border-radius: 5px 5px 5px 5px;
